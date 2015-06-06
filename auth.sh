@@ -2,14 +2,15 @@
 
 set -e
 
-tv_ip=''
+tv_ip='198.162.1.2'
 
 # use only A-Z a-z 0-9 for device. Probably. Haven't checked.
-my_device=''
-my_nick=''
+my_device='SonyPebble'
+my_nick='Pebble'
 
 my_uuid=$(uuidgen)
 
+bash auth.sh
 
 
 cd $(dirname $0)
